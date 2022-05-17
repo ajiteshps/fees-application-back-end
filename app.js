@@ -8,7 +8,7 @@ var authenticationRouter = require('./routes/authenticationRouter');
 
 var app = express();
 
-pp.use(cors());
+app.use(cors());
 
 app.use(logger('dev'));
 app.use(express.json());
