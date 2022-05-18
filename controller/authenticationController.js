@@ -4,8 +4,8 @@ exports.loginRequest = async (req, res) => {
         const password = req.body.password;
         const dbConnection = req.dbConnect;
 
-        console.log(username);
-        console.log(password);
+        console.log('Username',username);
+        console.log('Password', password);
 
         let loginSuccess = await dbConnection.query(`SELECT * FROM public.user_master_table WHERE username='${username}' AND password='${password}'`);
         if(loginSuccess.rows.length>0)
