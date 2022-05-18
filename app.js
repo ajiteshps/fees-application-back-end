@@ -8,6 +8,7 @@ var authenticationRouter = require('./routes/authenticationRouter');
 
 var app = express();
 
+const cors = require('cors');
 
 
 
