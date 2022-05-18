@@ -3,12 +3,13 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const cors = require('cors');
 
 var authenticationRouter = require('./routes/authenticationRouter');
 
 var app = express();
 
-const cors = require('cors');
+
 
 
 
